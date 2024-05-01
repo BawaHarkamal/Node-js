@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARKAMAL FITNESS WEBSITE</title>
+    
+    
+    <script></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+
+        font-family: 'Josefin Sans', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('IMG/fitness.jpg');
+        
+
+        background-color: rgb(105, 137, 145);
+
+        background-size: 101%;
+    }
+
+    .left {
+
+        display: inline-block;
+        
+        position: absolute;
+        left: 41px;
+        top: 14px;
+    }
+
+    .mid {
+        display: block;
+        width: 62%;
+        margin: 104px auto;
+       
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 12px;
+
+       
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 23px 30px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.navbar li a:hover:active {
+        text-decoration: underline;
+        color: rgb(175, 104, 114);
+    }
+
+    .btn {
+        font-family: 'Josefin Sans', sans-serif;
+        margin: 8px 3px;
+        padding: 7px 10px;
+        color: white;
+        background-color: black;
+        border: 2px solid rgb(82, 124, 172);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(64, 80, 79);
+
+    }
+
+    .container {
+        
+        margin: 170px 273px;
+        padding: 8px 74px;
+        width: 41%;
+        border-radius: 19px;
+    }
+
+    .form-group input {
+        text-align: center;
+        border: 2px solid black;
+        
+        display: block;
+        width: 77%;
+        padding: 6px;
+        margin: 8px auto;
+    }
+
+    .header {
+        position: sticky;
+        top: 1px;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: rgb(90 191 201);
+    }
+
+    .container button {
+        display: block;
+        width: 91%;
+        margin: 14px 23px;
+        font-size: 18px;
+    }
+    .left img{
+        width: 80px;
+    }
+    
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="IMG/logo.png" alt="">
+            <div>Fitness club</div>
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home </a></li>
+                <li><a href="#">About us </a></li>
+                <li><a href="#">Fitness calculator </a></li>
+                <li><a href="#">Facilities </a></li>
+
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Help center</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>For joining us please fill below details</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Phone or Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

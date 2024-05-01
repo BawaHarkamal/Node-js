@@ -1,0 +1,79 @@
+<!-- we have used OpenWeather Global services API to fetch the data related to weather -->
+<!-- query string  -->
+<!-- i class is used to insert icon -->
+<!-- font-awesome is site for selecting icons -->
+<!-- we have to add cdn link for each icon -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" 
+    integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="box">
+        <div class="wave -one"></div>
+        <div class="wave -two"></div>
+        <div class="wave -Three "></div>
+
+        <div id="weathercon"><i class="fas fa-sun" style="color:#eccc68"></i></div>
+        <div class="info">
+            <h2 class="location"><i class="fas fa-street-view"></i>Goindwal,IN</h2>
+            <p id="date">Wed |Apr 02 | 10:43PM</p>
+            <h1 class="temp">26.5 C</h1>
+            <h3 class="tempmin_max">Min 26.5 C | Max 27 C </h3>
+        </div>
+        
+
+    </div>
+    <script>
+        // for adding the details of date
+    const curDate=document.getElementById('date');
+    let weathercon= document.getElementById('weathecon');
+    const tempStatus="clouds";
+    // to fetch the current day
+    const getCurrentDay=()=>{
+        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+        let currentTime = new Date();
+        let day=weekday[currentTime.getDay()];
+        return day;
+ 
+    };
+    // getCurrentDay();
+    const getcurrentTime=()=>{
+        months=[
+            'jan','feb','march' , 'apr','may','june','july','aug','sept','oct','nov','dec'
+        ];
+        var now=new Date();
+        var month = months[now.getMonth()+1];
+        var day = now.getDate();
+        var year=now.getFullYear();
+
+        var hours=now.getHours();
+        var mins=now.getMinutes();
+
+        period="AM";
+        if(hours>11){
+            period="PM";
+            if(hours>12){
+                hours-=12;
+            }
+        }
+        if(mins<10){
+            mins="0"+mins;
+        }
+return ` ${month},${day} ${year}    ${hours}:${mins} ${period}`;
+        // console.log(month + "/" + day + "/" + year );
+        // console.log(hours+":"+mins+" "+period);
+    };
+    curDate.innerHTML=getCurrentDay()+"|"+getcurrentTime();
+
+    </script>
+</body>
+</html>

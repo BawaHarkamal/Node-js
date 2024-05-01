@@ -1,0 +1,5 @@
+Express js is web application framework that provide you simple API to build websites , web apps and back ends. or it is framwork of node js.
+we use the express js because it is more scalable and efficint than the node js
+npm does not allow capital letter.
+In package lock json , all details of dependicies of external package is given
+In node modules all the dependencies needed to run the exprss app
