@@ -6,6 +6,7 @@ const app = express();
 
 app.get("/", (req, res) => {
     return res.send("hello from the server side");
+    
 });
 
 app.get("/about", (req, res) => {
