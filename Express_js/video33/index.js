@@ -1,0 +1,1 @@
+// partials are those files or directory which contains the similar components i.e when we have some parts repeats over website then we create partials of that which then called by refrence

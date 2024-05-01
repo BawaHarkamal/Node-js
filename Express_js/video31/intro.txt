@@ -1,0 +1,8 @@
+how we can add the dynamic data in the websites:
+
+using template engines in express js
+1. pug
+2. ejs
+3. handlebars
+https://www.npmjs.com/package
+https://expressjs.com/en/guide/using-template-engines.html
